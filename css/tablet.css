@@ -46,6 +46,10 @@
   }
   /* ----------------- ABOUT ----------------- */
 
+  .about {
+    max-width: 768px;
+  }
+
   .about-item {
     max-width: 356px;
   }
@@ -54,7 +58,14 @@
 
   /* ----------------- TEAM ------------------ */
 
+  .team-list {
+    row-gap: 64px;
+  }
   /* --------------- CUSTOMERS --------------- */
+
+  .customers-item {
+    width: 168px;
+  }
 
   /* ---------------- FILTER ----------------- */
 
@@ -62,5 +73,35 @@
 
   /* ---------------- FOOTER ----------------- */
 
+  .footer-container {
+    width: 586px;
+    flex-direction: row;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .footer-soc,
+  .footer-logo {
+    align-items: flex-start;
+  }
+
+  .footer-form {
+    align-items: flex-start;
+  }
+
+  .footer-modal-input {
+    width: 264px;
+  }
+
+  .footer-input-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
   /* --------------- BACKDROP --------------- */
+
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
 }

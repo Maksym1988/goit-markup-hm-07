@@ -42,7 +42,8 @@
   /* ----------------- ABOUT ----------------- */
 
   .about {
-    padding-top: 120px;
+    max-width: 1440px;
+    padding-bottom: 0px;
   }
 
   .about-item {
@@ -70,6 +71,29 @@
   /* ---------------- PROJECT----------------- */
 
   /* ---------------- FOOTER ----------------- */
+
+  .site-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    width: auto;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    margin-right: 120px;
+  }
+
+  .footer-form {
+    margin-left: auto;
+  }
+
+  .list-footer-soc {
+    column-gap: 16px;
+  }
 
   /* --------------- BACKDROP --------------- */
 }
