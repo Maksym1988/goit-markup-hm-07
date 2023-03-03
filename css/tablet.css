@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* ---------------- HEADER --------------- */
+
+  /* ---------------- SITE NAV ---------------- */
+
+  /* ---------------- CONTACTS ---------------- */
+
+  /* ---------------- SECTION ---------------- */
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: left;
+  }
+  /* ---------------- HERO ---------------- */
+  .hero {
+    max-width: 768px;
+    min-height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tab-hero.jpg);
+    padding: 112px 0 108px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+  }
+
+  .container-hero {
+    max-width: 496px;
+    margin: auto;
+  }
+  /* ----------------- ABOUT ----------------- */
+
+  .about-item {
+    max-width: 356px;
+  }
+
+  /* ----------------- WORKS ----------------- */
+
+  /* ----------------- TEAM ------------------ */
+
+  /* --------------- CUSTOMERS --------------- */
+
+  /* ---------------- FILTER ----------------- */
+
+  /* ---------------- PROJECT----------------- */
+
+  /* ---------------- FOOTER ----------------- */
+
+  /* --------------- BACKDROP --------------- */
+}

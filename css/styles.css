@@ -53,8 +53,8 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 428px;
+  padding: 0 16px;
   margin: auto;
 }
 
@@ -154,8 +154,8 @@ img {
 /* ---------------- SECTION ---------------- */
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -183,13 +183,14 @@ img {
 
 .list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   color: var(--dark);
   margin-bottom: 8px;
 }
@@ -202,8 +203,8 @@ img {
 /* ---------------- HERO ---------------- */
 
 .hero {
-  max-width: 1440px;
-  min-height: 600px;
+  max-width: 428px;
+  min-height: 432px;
   margin: auto;
   text-align: center;
   background-color: var(--dark);
@@ -211,22 +212,22 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mob-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
+  padding: 112px 0;
 }
 
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--white);
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .container-hero {
-  max-width: 494px;
+  max-width: 320px;
   margin: auto;
 }
 
@@ -249,15 +250,15 @@ img {
 /* ----------------- ABOUT ----------------- */
 
 .about {
-  padding-top: 120px;
+  padding-top: 96px;
 }
 
 .about-item {
-  max-width: 264px;
+  max-width: 396px;
 }
 
 .about-icon {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 112px;
@@ -267,6 +268,10 @@ img {
 }
 
 /* ----------------- WORKS ----------------- */
+
+.works {
+  display: none;
+}
 
 .works-item {
   background-blend-mode: soft-light, normal;
