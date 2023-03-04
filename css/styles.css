@@ -99,54 +99,12 @@ img {
 
 .list-nav {
   display: none;
-  gap: 40px;
-}
-
-.list-nav .link {
-  position: relative;
-  font-weight: 500;
-  color: var(--dark);
-  transition: color var(--trs-time);
-}
-
-.list-nav .link:is(:hover, :focus, .current) {
-  color: var(--pressed-state);
-}
-
-.current::after {
-  content: '';
-  position: absolute;
-  bottom: -21px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: var(--pressed-state);
-  border-radius: 2px;
 }
 
 /* ---------------- CONTACTS ---------------- */
 
-.contacts-nav {
-  font-style: normal;
-}
-
 .contacts {
   display: none;
-}
-
-.item-contacts {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-}
-
-.contacts .link {
-  color: var(--text);
-  transition: color var(--trs-time);
-}
-
-.contacts .link:is(:hover, :focus) {
-  color: var(--pressed-state);
 }
 
 /* ---------------- SECTION ---------------- */
@@ -214,6 +172,18 @@ img {
   padding: 112px 0;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mob-hero-x2.jpg);
+  }
+}
+
 .hero-title {
   font-size: 36px;
   line-height: 1.11;
@@ -268,12 +238,6 @@ img {
 
 .works {
   display: none;
-}
-
-.works-item {
-  background-blend-mode: soft-light, normal;
-  border: 1px solid var(--accent);
-  width: calc((100% - 48px) / 3);
 }
 
 /* ----------------- TEAM ------------------ */
