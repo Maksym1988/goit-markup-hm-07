@@ -92,21 +92,14 @@ img {
 
 /* ---------------- SITE NAV ---------------- */
 
-.header-logo {
-  margin-right: 76px;
-}
-
 .site-nav {
+  display: flex;
   margin-right: auto;
 }
 
 .list-nav {
+  display: none;
   gap: 40px;
-}
-
-.site-nav,
-.list-nav {
-  display: flex;
 }
 
 .list-nav .link {
@@ -123,7 +116,7 @@ img {
 .current::after {
   content: '';
   position: absolute;
-  bottom: -28px;
+  bottom: -21px;
   display: block;
   width: 100%;
   height: 4px;
@@ -138,8 +131,13 @@ img {
 }
 
 .contacts {
-  display: flex;
-  gap: 40px;
+  display: none;
+}
+
+.item-contacts {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .contacts .link {
@@ -183,9 +181,8 @@ img {
 
 .list {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
-  flex-wrap: nowrap;
+  row-gap: 72px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -289,7 +286,6 @@ img {
 }
 
 .item-team {
-  max-width: 264px;
   text-align: center;
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -339,14 +335,11 @@ img {
 /* --------------- CUSTOMERS --------------- */
 
 .customers-list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 72px;
   column-gap: 16px;
 }
 
 .customers-item {
-  width: 190px;
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
@@ -559,8 +552,9 @@ img {
 
 .footer-input-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
+  justify-content: center;
 }
 
 .footer-icon {

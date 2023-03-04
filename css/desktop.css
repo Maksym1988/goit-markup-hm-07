@@ -1,14 +1,42 @@
 @media screen and (min-width: 1200px) {
-  .container {
+  .container,
+  .small-container {
     max-width: 1158px;
     padding: 0 15px;
   }
 
   /* ---------------- HEADER --------------- */
 
+  .header {
+    padding-bottom: 28px;
+  }
+
   /* ---------------- SITE NAV ---------------- */
 
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .list-nav {
+    display: flex;
+  }
+
+  .current::after {
+    bottom: -32px;
+  }
+
   /* ---------------- CONTACTS ---------------- */
+
+  .item-contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .contacts {
+    flex-direction: row;
+    gap: 40px;
+  }
 
   /* ---------------- SECTION ---------------- */
 
@@ -47,7 +75,7 @@
   }
 
   .about-item {
-    max-width: 264px;
+    width: calc((100% - 72px) / 4);
   }
 
   .about-icon {
@@ -63,8 +91,14 @@
   }
 
   /* ----------------- TEAM ------------------ */
-
+  .item-team {
+    width: calc((100% - 72px) / 4);
+  }
   /* --------------- CUSTOMERS --------------- */
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
 
   /* ---------------- FILTER ----------------- */
 

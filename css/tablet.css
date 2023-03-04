@@ -3,17 +3,36 @@
     max-width: 768px;
   }
 
+  .small-container {
+    max-width: 584px;
+  }
+
   /* ---------------- HEADER --------------- */
+
+  .header {
+    padding-bottom: 12px;
+  }
 
   /* ---------------- SITE NAV ---------------- */
 
+  .header-logo {
+    margin-right: 123px;
+  }
+
+  .list-nav {
+    display: flex;
+  }
+
   /* ---------------- CONTACTS ---------------- */
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
 
   /* ---------------- SECTION ---------------- */
   .list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 72px;
     column-gap: 24px;
   }
 
@@ -52,6 +71,7 @@
 
   .about-item {
     max-width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 
   /* ----------------- WORKS ----------------- */
@@ -61,10 +81,15 @@
   .team-list {
     row-gap: 64px;
   }
+
+  .item-team {
+    width: calc((100% - 24px) / 2);
+  }
+
   /* --------------- CUSTOMERS --------------- */
 
   .customers-item {
-    width: 168px;
+    width: calc((100% - 48px) / 3);
   }
 
   /* ---------------- FILTER ----------------- */
@@ -74,7 +99,7 @@
   /* ---------------- FOOTER ----------------- */
 
   .footer-container {
-    width: 586px;
+    width: 584px;
     flex-direction: row;
     gap: 72px 24px;
     flex-wrap: wrap;
@@ -94,7 +119,6 @@
   }
 
   .footer-input-form {
-    flex-direction: row;
     gap: 24px;
   }
 
