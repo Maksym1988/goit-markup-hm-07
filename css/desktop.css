@@ -122,6 +122,21 @@
 
   /* ---------------- PROJECT----------------- */
 
+  .project {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .list-project {
+    margin-top: 72px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+  }
+
+  .item-project {
+    width: calc((100% - 48px) / 3);
+  }
+
   /* ---------------- FOOTER ----------------- */
 
   .site-footer {

@@ -103,7 +103,7 @@
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/tab-hero-x2.jpg);
+        url(../images/tab-hero-2x.jpg);
     }
   }
 
@@ -148,7 +148,31 @@
 
   /* ---------------- FILTER ----------------- */
 
+  .list-filter {
+    max-width: none;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 12px 24px;
+  }
+
   /* ---------------- PROJECT----------------- */
+
+  .project {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .list-project {
+    margin-top: 64px;
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+
+  .item-project {
+    width: calc((100% - 24px) / 2);
+  }
 
   /* ---------------- FOOTER ----------------- */
 
