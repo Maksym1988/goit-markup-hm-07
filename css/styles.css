@@ -51,6 +51,10 @@ img {
   height: auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 428px;
@@ -105,6 +109,124 @@ img {
 
 .contacts {
   display: none;
+}
+
+/* ---------------- MOB MENU ---------------- */
+
+.btn-menu {
+  width: 32px;
+  height: 22px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-icon {
+  stroke: var(--dark);
+}
+
+.mob-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 35px 40px 40px;
+  background-color: var(--white);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  overflow-y: auto;
+  transition: transform var(--trs-time);
+}
+
+.mob-menu.is-hidden .menu {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.btn-close-menu:focus {
+  fill: var(--white);
+  background: var(--pressed-state);
+  border-radius: 4px;
+}
+
+.list-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.list-nav-menu .link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+
+.list-nav-menu .link:is(:hover, :focus, .current) {
+  color: var(--pressed-state);
+}
+
+.list-menu-soc {
+  gap: 56px;
+}
+
+.contacts-menu {
+  margin-bottom: 48px;
+}
+
+.item-menu-tel {
+  margin-bottom: 40px;
+}
+
+.item-menu-tel .link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-brand);
+}
+
+.item-menu-mail .link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.item-menu-soc {
+  width: 40px;
+  height: 40px;
+}
+
+.item-menu-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-brand);
+  transition: background-color var(--trs-time);
+}
+
+.item-menu-link:is(:hover, :focus) {
+  background-color: var(--pressed-state);
 }
 
 /* ---------------- SECTION ---------------- */
@@ -592,6 +714,7 @@ img {
   transform: translate(-50%, -50%) scale(0);
 }
 
+.btn-close-menu,
 .btn-close {
   position: absolute;
   right: 24px;

@@ -53,6 +53,67 @@
             </li>
           </ul>
         </address>
+        <button class="btn-menu" type="button" data-menu-open>
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mob Menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="btn-close-menu" type="button" data-menu-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="list-nav-menu">
+          <li>
+            <a class="link" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="link current" href="">Contacts</a></li>
+        </ul>
+        <div>
+          <ul class="contacts-menu">
+            <li class="item-menu-tel">
+              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="item-menu-mail">
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list-menu-soc list">
+            <li class="item-menu-soc">
+              <a class="item-menu-link link" href="">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-menu-soc">
+              <a class="item-menu-link link" href="">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="item-menu-soc">
+              <a class="item-menu-link link" href="">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="item-menu-soc">
+              <a class="item-menu-link link" href="">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -541,5 +602,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
