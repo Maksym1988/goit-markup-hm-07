@@ -46,6 +46,10 @@
     border-radius: 2px;
   }
 
+  .btn-menu {
+    display: none;
+  }
+
   /* ---------------- CONTACTS ---------------- */
 
   .contacts {
