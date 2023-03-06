@@ -230,6 +230,10 @@ img {
   color: var(--text);
 }
 
+.list-menu-soc {
+  margin-bottom: 16px;
+}
+
 .item-menu-soc {
   width: 40px;
   height: 40px;
